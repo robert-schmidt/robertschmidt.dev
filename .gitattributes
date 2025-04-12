@@ -1,0 +1,9 @@
+build.php export-ignore
+build.py export-ignore
+contact.php export-ignore
+deploy.php export-ignore
+minify.php export-ignore
+README.md export-ignore
+script.js export-ignore
+styles.css export-ignore
+styles.min.php.bak export-ignore
