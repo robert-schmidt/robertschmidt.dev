@@ -3,7 +3,9 @@ build.py export-ignore
 contact.php export-ignore
 deploy.php export-ignore
 minify.php export-ignore
+minify.simple.php export-ignore
 README.md export-ignore
 script.js export-ignore
 styles.css export-ignore
-styles.min.php.bak export-ignore
+styles.min.css.bak export-ignore
+script.min.js.bak export-ignore
