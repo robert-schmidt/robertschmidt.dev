@@ -9,3 +9,6 @@ script.js export-ignore
 styles.css export-ignore
 styles.min.css.bak export-ignore
 script.min.js.bak export-ignore
+.gitattributes export-ignore
+.gitignore export-ignore
+deploy.zip export-ignore
