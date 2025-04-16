@@ -59,20 +59,40 @@ header {
 }
 
 .profile-img {
+    position: relative;
     width: 180px;
     height: 180px;
+    overflow: hidden;
     border-radius: 50%;
     border: 3px solid var(--accent-color);
     box-shadow: 0 0 15px rgba(0, 170, 65, 0.5);
-    margin-bottom: 1.5rem;
-    overflow: hidden;
-    position: relative;
 }
 
 .profile-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: opacity 10s ease;
+}
+
+.profile-img .cartoon-photo {
+    z-index: 2;
+}
+
+.profile-img .real-photo {
+    opacity: 0;
+    z-index: 1;
+}
+
+.profile-img:hover .cartoon-photo {
+    opacity: 0;
+}
+
+.profile-img:hover .real-photo {
+    opacity: 1;
 }
 
 h1 {
