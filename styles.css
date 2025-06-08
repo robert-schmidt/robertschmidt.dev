@@ -368,11 +368,11 @@ body {
 
 /* Quote Section */
 .quote-section {
-    padding: 80px 20px;
+    padding: 60px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 300px;
+    min-height: 200px;
     position: relative;
 }
 
@@ -426,7 +426,7 @@ body {
 
 /* Projects Section */
 .projects-section {
-    padding: 120px 20px;
+    padding: 80px 20px;
     background: var(--bg-secondary);
 }
 
@@ -584,7 +584,7 @@ body {
 
 /* Skills Section */
 .skills-section {
-    padding: 120px 20px;
+    padding: 80px 20px;
     background: var(--bg-primary);
 }
 
@@ -643,7 +643,7 @@ body {
 
 /* About Section */
 .about-section {
-    padding: 120px 20px;
+    padding: 80px 20px;
     background: var(--bg-secondary);
 }
 
@@ -721,7 +721,7 @@ body {
 
 /* Terminal Section */
 .terminal-section {
-    padding: 120px 20px;
+    padding: 80px 20px;
     background: var(--bg-primary);
 }
 
@@ -873,7 +873,7 @@ body {
 
 /* Contact Section */
 .contact-section {
-    padding: 120px 20px;
+    padding: 80px 20px;
     background: var(--bg-secondary);
 }
 
@@ -1163,10 +1163,20 @@ body.hacker-mode svg {
         font-size: 11px;
     }
     
+    .header-content {
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .logo-section {
+        flex: 0 0 auto;
+    }
+    
     /* Hero section */
     .hero-section {
         padding: 0 16px;
         min-height: auto;
+        margin-bottom: 40px;
     }
     
     .hero-grid {
@@ -1204,7 +1214,7 @@ body.hacker-mode svg {
     
     /* Projects - compact view */
     .projects-section {
-        padding: 60px 16px;
+        padding: 40px 16px;
     }
     
     .section-header {
@@ -1255,7 +1265,7 @@ body.hacker-mode svg {
     
     /* Social grid - 3 columns */
     .contact-section {
-        padding: 60px 16px;
+        padding: 40px 16px;
     }
     
     .social-grid {
@@ -1284,7 +1294,7 @@ body.hacker-mode svg {
     
     /* Skills grid - 2 columns */
     .skills-section {
-        padding: 60px 16px;
+        padding: 40px 16px;
     }
     
     .skills-grid {
@@ -1308,7 +1318,7 @@ body.hacker-mode svg {
     
     /* About section */
     .about-section {
-        padding: 60px 16px;
+        padding: 40px 16px;
     }
     
     .about-content {
@@ -1317,8 +1327,8 @@ body.hacker-mode svg {
     
     /* Quote section */
     .quote-section {
-        padding: 40px 16px;
-        min-height: 200px;
+        padding: 30px 16px;
+        min-height: 150px;
     }
     
     .quote-container {
@@ -1339,12 +1349,14 @@ body.hacker-mode svg {
     .floating-header {
         margin: 8px;
         width: calc(100% - 16px);
-        padding: 10px 12px;
+        padding: 10px 16px;
     }
     
     .header-content {
-        flex-direction: column;
-        gap: 12px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
     }
     
     .logo {
@@ -1354,11 +1366,13 @@ body.hacker-mode svg {
     }
     
     .logo-section {
-        order: 2;
+        flex: 0 0 auto;
+        gap: 8px;
     }
     
     .nav-menu {
-        order: 1;
+        flex: 1 1 auto;
+        justify-content: flex-end;
     }
     
     .status-indicator {
