@@ -989,6 +989,7 @@ body {
 .social-item.github:hover { border-color: #333; }
 .social-item.youtube:hover { border-color: #ff0000; }
 .social-item.tiktok:hover { border-color: #000; }
+.social-item.coffee:hover { border-color: #ff813f; }
 
 .social-icon {
     width: 48px;
