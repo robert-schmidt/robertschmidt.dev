@@ -46,23 +46,40 @@ function initializeFloatingHeader() {
     const header = document.querySelector('.floating-header');
     let lastScrollY = window.scrollY;
     
-    window.addEventListener('scroll', () => {
+    // Function to update header background based on scroll position and theme
+    function updateHeaderBackground() {
         const scrollY = window.scrollY;
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
         
         if (scrollY > 100) {
-            header.style.background = 'rgba(255, 255, 255, 0.95)';
-            if (document.documentElement.getAttribute('data-theme') === 'dark') {
-                header.style.background = 'rgba(26, 26, 26, 0.95)';
-            }
+            header.style.background = isDark ? 'rgba(26, 26, 26, 0.95)' : 'rgba(255, 255, 255, 0.95)';
             header.style.backdropFilter = 'blur(20px)';
         } else {
-            header.style.background = 'rgba(255, 255, 255, 0.8)';
-            if (document.documentElement.getAttribute('data-theme') === 'dark') {
-                header.style.background = 'rgba(26, 26, 26, 0.8)';
-            }
+            header.style.background = isDark ? 'rgba(26, 26, 26, 0.8)' : 'rgba(255, 255, 255, 0.8)';
         }
-        
-        lastScrollY = scrollY;
+    }
+    
+    // Initial update
+    updateHeaderBackground();
+    
+    // Update on scroll
+    window.addEventListener('scroll', () => {
+        updateHeaderBackground();
+        lastScrollY = window.scrollY;
+    });
+    
+    // Listen for theme changes
+    const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+                updateHeaderBackground();
+            }
+        });
+    });
+    
+    observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-theme']
     });
 }
 
