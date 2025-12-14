@@ -1,48 +1,48 @@
 :root {
-    /* Light Theme */
+    /* Light Theme - Monochrome */
     --bg-primary: #fafafa;
     --bg-secondary: #ffffff;
     --bg-tertiary: #f0f0f0;
     --text-primary: #1a1a1a;
     --text-secondary: #6b7280;
     --text-muted: #9ca3af;
-    --accent-primary: #6366f1;
-    --accent-secondary: #8b5cf6;
-    --accent-tertiary: #06b6d4;
+    --accent-primary: #1a1a1a;
+    --accent-secondary: #404040;
+    --accent-tertiary: #525252;
     --border-light: #e5e7eb;
     --border-medium: #d1d5db;
     --shadow-light: rgba(0, 0, 0, 0.05);
     --shadow-medium: rgba(0, 0, 0, 0.1);
     --shadow-heavy: rgba(0, 0, 0, 0.15);
-    --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-    --gradient-secondary: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
-    --gradient-tertiary: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
-    --terminal-bg: #0f172a;
-    --terminal-text: #cbd5e1;
-    --terminal-accent: #22d3ee;
-    --success: #10b981;
-    --warning: #f59e0b;
-    --error: #ef4444;
+    --gradient-primary: linear-gradient(135deg, #1a1a1a 0%, #404040 100%);
+    --gradient-secondary: linear-gradient(135deg, #404040 0%, #525252 100%);
+    --gradient-tertiary: linear-gradient(135deg, #525252 0%, #737373 100%);
+    --terminal-bg: #0a0a0a;
+    --terminal-text: #d4d4d4;
+    --terminal-accent: #e5e5e5;
+    --success: #525252;
+    --warning: #737373;
+    --error: #404040;
 }
 
 [data-theme="dark"] {
-    --bg-primary: #0f0f0f;
-    --bg-secondary: #1a1a1a;
-    --bg-tertiary: #262626;
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #141414;
+    --bg-tertiary: #1f1f1f;
     --text-primary: #ffffff;
     --text-secondary: #a3a3a3;
     --text-muted: #737373;
-    --accent-primary: #818cf8;
-    --accent-secondary: #a78bfa;
-    --accent-tertiary: #22d3ee;
+    --accent-primary: #ffffff;
+    --accent-secondary: #e5e5e5;
+    --accent-tertiary: #d4d4d4;
     --border-light: #262626;
     --border-medium: #404040;
     --shadow-light: rgba(0, 0, 0, 0.2);
     --shadow-medium: rgba(0, 0, 0, 0.3);
     --shadow-heavy: rgba(0, 0, 0, 0.4);
-    --terminal-bg: #030712;
-    --terminal-text: #e2e8f0;
-    --terminal-accent: #06b6d4;
+    --terminal-bg: #000000;
+    --terminal-text: #e5e5e5;
+    --terminal-accent: #ffffff;
 }
 
 * {
